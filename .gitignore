@@ -30,6 +30,7 @@ xdg-app-helper
 xdg-app-session-helper
 xdg-document-portal
 xdg-app-builder
+xdg-desktop-portal
 testdb
 doc/*.1
 *~
@@ -45,3 +46,5 @@ document-portal/xdp-dbus.[ch]
 document-portal/xdp-resources.[ch]
 .dirstamp
 test-suite*.log
+data/*Backend.xml
+desktop-portal/xdg-desktop-resources.c

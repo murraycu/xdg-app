@@ -164,6 +164,7 @@ xdg_app_builtin_run (int argc, char **argv, GCancellable *cancellable, GError **
   runtime_metakey = xdg_app_deploy_get_metadata (runtime_deploy);
 
   app_context = xdg_app_context_new ();
+  xdg_app_context_set_session_bus_policy (app_context, "org.freedesktop.portal.Desktop", XDG_APP_POLICY_TALK);
   xdg_app_context_set_session_bus_policy (app_context, "org.freedesktop.portal.Documents", XDG_APP_POLICY_TALK);
 
   if (!xdg_app_context_load_metadata (app_context, runtime_metakey, error))
